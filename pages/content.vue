@@ -1,20 +1,5 @@
 <template>
   <div>
-	<router-link tag="li" to="/">
-	  <a>Top</a>
-	</router-link>
-	<router-link tag="li" to="/profile">
-	  <a>Profile</a>
-	</router-link>
-	<router-link tag="li" to="/plan">
-	  <a>Plans</a>
-	</router-link>
-	<router-link tag="li" to="/price">
-	  <a>Price</a>
-	</router-link>
-	<router-link tag="li" to="/content">
-	  <a>Content</a>
-	</router-link>
 	<nuxt/>
   </div>
 </template>

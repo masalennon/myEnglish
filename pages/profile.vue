@@ -1,17 +1,15 @@
 <template>
   <section class="container">
-	<div class="h1">
-	  <h1>今度こそ本気で英語を身につけたいあなたへ</h1>
-	</div>
-
-	<div class="space">
-	  <h1>個人によるマンツーマンレッスンだからお手軽に</h1>
-	  <h1>週6日サポートだからストイックに</h1>
-	</div>
-
-	<p>
-	  英語を学べます
-	</p>
+    <div>
+      <app-logo/>
+      <h1 class="title">
+        mypage
+      </h1>
+      <h2 class="subtitle">
+		Masanari
+      </h2>
+	  <!--<img :src="require('../assets/TOEIC-SCORE.png')" />-->
+    </div>
   </section>
 </template>
 
@@ -20,27 +18,23 @@ import AppLogo from '~/components/AppLogo.vue'
 
 export default {
   components: {
-	AppLogo
+    AppLogo
+  },
+  data () {
+        return {
+        }
   }
 }
 </script>
 
 <style>
 .container {
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.space {
-  height: 100px;
-}
-
-
-.h1 {
-  display: block
-}
-
 
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
