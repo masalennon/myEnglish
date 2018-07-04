@@ -1,19 +1,41 @@
 <template>
   <div>
-	<b-nav fill tabs>
-	  <b-nav-item to="/">Top</b-nav-item>
-	  <b-nav-item to="/profile">Profile</b-nav-item>
-	  <b-nav-item to="/">Top</b-nav-item>
-	  <b-nav-item to="/profile">Profile</b-nav-item>
-	  <b-nav-item to="/price">Price </b-nav-item>
-	  <b-nav-item to="/content">Content</b-nav-item>
-	</b-nav>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="/">TOP</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link" href="/profile">講師プロフィール<span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/content">サービス内容</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/price">料金</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/apply">お申し込みはこちら</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	<!--<b-nav fill tabs>-->
+	  <!--<b-nav-item to="/">Top</b-nav-item>-->
+	  <!--<b-nav-item to="/profile">Profile</b-nav-item>-->
+	  <!--<b-nav-item to="/price">Price </b-nav-item>-->
+	  <!--<b-nav-item to="/content">Content</b-nav-item>-->
+	  <!--</b-nav>-->
 	<nuxt/>
   </div>
 </template>
 <script>
 </script>
 <style>
+<!--bootstrapを上書きするときは、新しいclassを作る。上書きしたいclassに--extendをつけて上書きするようにすること。　-->
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
