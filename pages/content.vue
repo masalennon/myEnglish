@@ -1,6 +1,7 @@
 <template>
   <div>
 	<nuxt/>
+	<b-badge>New!</b-badge>
   </div>
 </template>
 

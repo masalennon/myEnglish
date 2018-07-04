@@ -1,24 +1,18 @@
 <template>
   <div>
-	<router-link tag="li" to="/">
-	  <a>Top</a>
-	</router-link>
-	<router-link tag="li" to="/profile">
-	  <a>Profile</a>
-	</router-link>
-	<router-link tag="li" to="/plan">
-	  <a>Plans</a>
-	</router-link>
-	<router-link tag="li" to="/price">
-	  <a>Price</a>
-	</router-link>
-	<router-link tag="li" to="/content">
-	  <a>Content</a>
-	</router-link>
+	<b-nav fill tabs>
+	  <b-nav-item to="/">Top</b-nav-item>
+	  <b-nav-item to="/profile">Profile</b-nav-item>
+	  <b-nav-item to="/">Top</b-nav-item>
+	  <b-nav-item to="/profile">Profile</b-nav-item>
+	  <b-nav-item to="/price">Price </b-nav-item>
+	  <b-nav-item to="/content">Content</b-nav-item>
+	</b-nav>
 	<nuxt/>
   </div>
 </template>
-
+<script>
+</script>
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
