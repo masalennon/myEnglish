@@ -1,3 +1,11 @@
+/* nuxt.config.js */
+// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository-name>/'
+  }
+} : {}
+
 module.exports = {
   /*
    ** Headers of the page
@@ -42,5 +50,8 @@ module.exports = {
     // Load a Node.js module directly (here it's a Sass file)
     // CSS file in the project
     // SCSS file in the project
-  ]
+  ],
+  router: {
+    base: '/myPage/'
+  }
 }
