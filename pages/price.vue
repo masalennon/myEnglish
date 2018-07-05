@@ -24,19 +24,19 @@
 		</tr>
 		<tr>
 		  <td class="data fst">
-			タブ型
+			英語教育会社A
 		  </td>
 		  <td class="data">
-			タブ型
+			150,000円
 		  </td>
 		  <td class="data">
-			Geckoエンジン
+			50,000円
 		  </td>
 		  <td class="data">
-			Linux対応
+			週2回1回90分
 		  </td>
 		  <td class="data">
-			89言語対応
+			3ヶ月
 		  </td>
 		</tr>
 		<tr>
