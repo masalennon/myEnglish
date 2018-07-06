@@ -52,6 +52,5 @@ module.exports = {
     // SCSS file in the project
   ],
   router: {
-    base: '/myPage/'
   }
 }
