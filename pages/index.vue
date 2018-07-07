@@ -31,6 +31,15 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-width: 1000px;
+}
+
+body {
+}
+
+
+html {
+  background: whitesmoke;
 }
 
 .title {
