@@ -126,11 +126,6 @@ export default {
 </script>
 
 <style>
-.header {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
 
 .text {
   text-align: center;
