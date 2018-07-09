@@ -1,13 +1,15 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        mypage
-      </h1>
-      <h2 class="subtitle">
-		Masanari
-      </h2>
+	  <p class="profile">
+		1993年生まれ。慶應義塾大学経済学部卒。<br>
+		独学で慶應義塾大学、東京外国語大学に合格。<br>
+		大学四年時に独学で英会話の勉強を始め、<br>
+		TOEIC用の対策をせずにTOEIC915点を取得。<br>
+		英語学習と並行して独学でプログラミングを学び、<br>
+		大学卒業後はITエンジニアとして都内IT企業で勤務。
+	  </p>
+
 	  <!--<img :src="require('../assets/TOEIC-SCORE.png')" />-->
     </div>
   </section>
@@ -28,6 +30,10 @@ export default {
 </script>
 
 <style>
+.profile {
+  width: 100% !important;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
