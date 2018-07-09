@@ -1,6 +1,6 @@
 <template>
   <div>
-	<nav class="navbar navbar--extend navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar--extend navbar-expand-lg">
 	  <a class="navbar-brand nav-link--extend" href="/">Self-Learning English</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -29,12 +29,12 @@
 	  <!--<b-nav-item to="/content">Content</b-nav-item>-->
 	  <!--</b-nav>-->
 	<nuxt/>
+	<div class="copyright">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </div>
 </template>
 <script>
 </script>
 <style lang="scss">
-@import '../src/assets/scss/app.scss';
 
 html {
   font-size: 16px;
@@ -46,21 +46,47 @@ html {
   box-sizing: border-box;
 }
 
-.navbar--extend {
-  position: fixed;
-  width: 100%;
-  height: 110px;
-  background-color: rgba(0,0,0,.5) !important;
+p {
+  text-align: center;
+  font-size: 22px;
+  width: 60% !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px; 
+}
+/* ↑margin-top:130pxを入れると重ならないで綺麗にモバイルで表示される。*/
+
+h1 {
+  text-align: center;
 }
 
 
 
-.container-main {
-  padding-top: 130px;
+
+article .life-advice {
+  padding-top: 40px; 
+}
+
+.container {
+  max-width: 100%;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  bottom: 0px;
+  padding-bottom: 20px;
 }
 
 article {
-  padding-top: 130px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, .5) !important;
 }
 
 .nav-link--extend {
@@ -71,4 +97,6 @@ article {
   box-shadow: inset 0 -2px orange;
   color: hsla(0,0%,100%,.75) !important;
 }
+@import '../src/assets/scss/app.scss';
+
 </style>
