@@ -1,33 +1,30 @@
 <template>
   <div>
-	<nav class="navbar navbar--extend navbar-expand-lg">
-	  <a class="navbar-brand nav-link--extend" href="/">Self-Learning English</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav">
-		  <li class="nav-item">
-			<a class="nav-link nav-link--extend" href="/profile">講師プロフィール<span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link nav-link--extend" href="/content">サービス内容</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link nav-link--extend" href="/price">料金</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link nav-link--extend" href="/apply">お申し込みはこちら</a>
-		  </li>
-		</ul>
-	  </div>
-	</nav>
-	<!--<b-nav fill tabs>-->
-	  <!--<b-nav-item to="/">Top</b-nav-item>-->
-	  <!--<b-nav-item to="/profile">Profile</b-nav-item>-->
-	  <!--<b-nav-item to="/price">Price </b-nav-item>-->
-	  <!--<b-nav-item to="/content">Content</b-nav-item>-->
-	  <!--</b-nav>-->
+	<b-navbar class="sticky-top" toggleable="md" type="dark" variant="dark">
+
+	  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+	  <b-navbar-brand href="/">
+		  <img style="height: 40px;" :src="require('../assets/leaves.svg')" />
+	  </b-navbar-brand>
+
+	  <b-collapse is-nav id="nav_collapse">
+
+		<b-navbar-nav>
+		  <b-nav-item href="/">TOP</b-nav-item>
+		  <div class="dropdown-divider"></div>
+		  <b-nav-item href="/content">サービス内容</b-nav-item>
+		  <div class="dropdown-divider"></div>
+		  <b-nav-item href="/price">料金</b-nav-item>
+		  <div class="dropdown-divider"></div>
+		  <b-nav-item href="/profile">講師プロフィール</b-nav-item>
+		  <div class="dropdown-divider"></div>
+		  <b-nav-item href="/apply">お申し込みはこちら</b-nav-item>
+		  <div class="dropdown-divider"></div>
+		</b-navbar-nav>
+	  </b-collapse>
+	</b-navbar>
+
 	<nuxt/>
 	<div class="copyright">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </div>

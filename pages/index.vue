@@ -1,18 +1,13 @@
 <template>
-  <section class="container">
-	<div class="h1">
-	  <h1>今度こそ本気で英語を身につけたいあなたへ</h1>
+  <main class="container">
+	<div class="">
+	  今度こそ本気で英語を身につけたいあなたへ<br>
+	  個人によるマンツーマンレッスンだからお手頃に<br>
+	  限界を目標に設定するからストイックに英語を学べます。
+
 	</div>
 
-	<div class="space">
-	  <h1>個人によるマンツーマンレッスンだからお手軽に</h1>
-	  <h1>週6日サポートだからストイックに</h1>
-	</div>
-
-	<p>
-	  英語を学べます
-	</p>
-  </section>
+  </main>
 </template>
 
 <script>
@@ -31,7 +26,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-width: 1000px;
 }
 
 body {

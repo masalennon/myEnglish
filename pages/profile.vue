@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-	  <p class="profile">
+	  <p class="row">
 		1993年生まれ。慶應義塾大学経済学部卒。<br>
 		独学で慶應義塾大学、東京外国語大学に合格。<br>
 		大学四年時に独学で英会話の勉強を始め、<br>

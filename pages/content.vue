@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-
 	<!--<header>-->
 	  <!--<img :src="require('../assets/header.png')" />-->
 	  <!--</header>-->
@@ -140,7 +139,6 @@
 <style lang="scss">
 @import '../src/assets/scss/app.scss';
 h1 {
-  color: #5A5AD2;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -163,7 +161,7 @@ h1 {
 
 .life-advice {
   margin-bottom: 40px;
-  background: #F5FCFF;
+  background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
   padding-bottom: 60px;
 }
 
@@ -182,7 +180,7 @@ h1 {
 }
 .unnecessary-eikaiwa {
   padding-bottom: 60px;
-  background: #F5FCFF;
+  background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
   padding-top: 40px;
 }
 .unnecessary-eikaiwa-paragraph {
@@ -219,16 +217,15 @@ h1 {
   width: 80% !important;
 }
 .main-container {
-  background: white;
-  width: 100%;
 }
+
 .life-advice1 {
   width: 33%;
   float: left;
 }
 h4 {
   font-size: 2em;
-  color: #5A5AD2;
+  color: #333;
   font-weight: 700;
   text-align: center;
   padding-top: 10px;
