@@ -1,6 +1,6 @@
 <template>
   <div>
-	<b-navbar class="sticky-top" toggleable="md" type="dark" variant="dark">
+	<b-navbar class="sticky-top additional" toggleable="md" type="dark" variant="dark">
 
 	  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -57,6 +57,8 @@ h1 {
   text-align: center;
 }
 
+body {
+}
 
 
 
@@ -70,6 +72,7 @@ article .life-advice {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 50px;
+  overflow-x: hidden;
 }
 
 .copyright {

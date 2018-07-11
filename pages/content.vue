@@ -26,7 +26,7 @@
 
   <main class="main-container">
 	<article>
-	  <div class="row">
+	  <div class="row row--extend">
 		<div class="col-md-12">
 		  <h1 class="">
 			一人一人に学習カリキュラムを作成。<br>
@@ -43,7 +43,7 @@
 		</div>
 	  </div>
 
-	  <div class="life-advice">
+	  <div class="life-advice row--extend">
 		<h1>
 		  学習を続けていくために<br>
 		</h1>
@@ -83,7 +83,7 @@
 	  </div>
 
 
-	  <div class="">
+	  <div class="online-support row--extend">
 		<h1 class="">
 		  毎日の学習を支えるオンラインサポート。
 		</h1>
@@ -160,9 +160,9 @@ h1 {
 }
 
 .life-advice {
-  margin-bottom: 40px;
   background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
   padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 .life-advice-paragraph {
@@ -171,8 +171,8 @@ h1 {
 }
 
 .online-support {
-  margin-bottom: 60px;
-  height: 700px;
+  padding-top: 40px;
+  background: linear-gradient(to top, #fff 0, #f6f6f6 150px);
 }
 
 .online-support-paragraph {
@@ -180,8 +180,7 @@ h1 {
 }
 .unnecessary-eikaiwa {
   padding-bottom: 60px;
-  background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
-  padding-top: 40px;
+  margin-top: 50px;
 }
 .unnecessary-eikaiwa-paragraph {
 
@@ -240,6 +239,12 @@ h4 {
 }
 .online-support-h1 {
   margin-bottom: 30px;
+}
+
+.row--extend {
+  width: 100% !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 
 </style>
