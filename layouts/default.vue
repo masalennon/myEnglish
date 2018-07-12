@@ -45,7 +45,7 @@ html {
 
 p {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   width: 60% !important;
   margin-right: auto;
   margin-left: auto;

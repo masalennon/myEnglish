@@ -119,6 +119,10 @@
 			もう英会話教室は<br>
 			必要ありません！
 		  </h1>
+		  <h4>
+			英語を学べば、<br>世界が一気に広がる！
+		  </h4>
+			<img style="height: 230px;" :src="require('../assets/earth-with-children-ring-around.svg')" />
 		  <p class="unnecessary-eikaiwa-paragraph">
 			良質な教材はネット、書店に溢れています。<br>
 			必要なのはそれらの正しい活用方法と独学力です。<br>
@@ -142,7 +146,7 @@ h1 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-weight: 700;
 }
 

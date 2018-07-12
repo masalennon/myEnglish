@@ -30,10 +30,11 @@ export default {
 <style>
 .profile {
   width: 100% !important;
+  margin-bottom: 400px;
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 87vh;
   display: flex;
   justify-content: center;
   align-items: center;
