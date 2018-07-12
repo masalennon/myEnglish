@@ -34,7 +34,7 @@
 <style lang="scss">
 
 html {
-  font-size: 16px;
+  font-size: 62.5%;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -55,6 +55,7 @@ p {
 
 h1 {
   text-align: center;
+  font-size: 2rem !important;
 }
 
 body {
@@ -69,8 +70,8 @@ article .life-advice {
 .container {
   max-width: 100%;
   text-align: center;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   padding-top: 50px;
   overflow-x: hidden;
 }

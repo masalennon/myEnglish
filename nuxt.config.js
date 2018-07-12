@@ -47,10 +47,10 @@ module.exports = {
 	'bootstrap-vue/nuxt',
   ],
   css: [
-	'@/src/assets/scss/app.scss'
-	// Load a Node.js module directly (here it's a Sass file)
-    // CSS file in the project
     // SCSS file in the project
+	'@/src/assets/scss/app.scss',
+    // CSS file in the project
+	// Load a Node.js module directly (here it's a Sass file)
   ],
   router: {
   }

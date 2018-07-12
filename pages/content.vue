@@ -28,9 +28,9 @@
 	<article>
 	  <div class="row row--extend">
 		<div class="col-md-12">
-		  <h1 class="">
+		  <div class="make-carriculum-header">
 			一人一人に学習カリキュラムを作成。<br>
-		  </h1>
+		  </div>
 		  <!--<div class="both-ok">-->
 			<!--<img :src="require('../assets/both-OK.png')" />-->
 			<!--</div>-->
@@ -43,7 +43,7 @@
 		</div>
 	  </div>
 
-	  <div class="life-advice row--extend">
+	  <div class="life-advice row--extend" >
 		<h1>
 		  学習を続けていくために<br>
 		</h1>
@@ -54,7 +54,7 @@
 			<h4>
 			  Life
 			</h4>
-			<p class="life-advice-paragraph1">
+			<p class="life-advice-paragraph">
 			  働きながら学習時間をどうしたら捻出できるか、自分を律して学習を毎日続けて行くにはどうしたらいいかについてもアドバイス。
 			  心理学の研究結果を基に、意思の力を高め目標を達成するためのマインドセットの作り方までお伝えします。
 			</p>
@@ -64,7 +64,7 @@
 			<h4>
 			  Schedule
 			</h4>
-			<p class="life-advice-paragraph2">
+			<p class="life-advice-paragraph">
 			  契約期間中迷いなく学習を進めていただけるように、あなた専用の学習スケジュールをお作りします。個人の好みを伺い、使用する
 			  参考書を一緒に選ぶところから目標達成のためにそれをどう活用していくかまでサポートします。
 			</p>
@@ -74,7 +74,7 @@
 			<h4>
 			  Homework
 			</h4>
-			<p class="life-advice-paragraph3">
+			<p class="life-advice-paragraph">
 			  継続して毎日の学習を行えるように、宿題の設定をいたします。宿題を全てこなしていけばあなたの目標を達成できるように作成しますので、
 			  毎日の学習のペースメーカーとしてお役立てください。もちろん、自分で学ぶペースを決めたい、など希望がありましたら柔軟にお答えいたします。
 			</p>
@@ -122,7 +122,7 @@
 		  <h4>
 			英語を学べば、<br>世界が一気に広がる！
 		  </h4>
-			<img style="height: 230px;" :src="require('../assets/earth-with-children-ring-around.svg')" />
+		  <img style="height: 230px;" :src="require('../assets/earth-with-children-ring-around.svg')" />
 		  <p class="unnecessary-eikaiwa-paragraph">
 			良質な教材はネット、書店に溢れています。<br>
 			必要なのはそれらの正しい活用方法と独学力です。<br>
@@ -132,100 +132,102 @@
 			</router-link>
 		  </p>
 		</div>
-	</div>
-  </article>
-</main>
+	  </div>
+	</article>
+  </main>
 
-<nuxt/>
+  <nuxt/>
 </div>
 </template>
 
 <style lang="scss">
-@import '../src/assets/scss/app.scss';
-h1 {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  font-weight: 700;
-}
 
 
-.both-ok {
-  height: 100%;
-  width: 100%
-}
-
-.make-carriculum-h1 {
-}
-
-.make-carriculum-paragraph {
-  width: 80% !important;
-}
-
-.life-advice {
-  background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
-  padding-bottom: 60px;
-  padding-top: 40px;
-}
-
-.life-advice-paragraph {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.online-support {
-  padding-top: 40px;
-  background: linear-gradient(to top, #fff 0, #f6f6f6 150px);
-}
-
-.online-support-paragraph {
-
-}
-.unnecessary-eikaiwa {
-  padding-bottom: 60px;
-  margin-top: 50px;
-}
-.unnecessary-eikaiwa-paragraph {
-
-}
 
 .container {
+
   width: inherit !important;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
+
+  h1 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	font-weight: 700;
+  }
+  .row--extend {
+	width: 100% !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+  }
+
+
+	padding-bottom: 50px;
+	.make-carriculum-paragraph {
+	  width: 80% !important;
+	}
+	.make-carriculum-header {
+	  font-size: 22px;
+	}
+  .life-advice {
+	padding-bottom: 60px;
+	padding-top: 40px;
+	background: linear-gradient(to bottom, #fff 0, #f6f6f6 150px);
+	.life-advice-paragraph {
+	  margin-right: auto;
+	  margin-left: auto;
+	}
+
+	.life-advice-row {
+	  height: 700px !important;
+	  width: 80% !important;
+	  margin-right: auto;
+	  margin-left: auto;
+	}
+
+	.life-advice-paragraph {
+	  width: 80% !important;
+	}
+
+	.life-advice1 {
+	  width: 33%;
+	  float: left;
+	}
+
+  }
+  .online-support {
+  padding-top: 40px;
+  background: linear-gradient(to top, #fff 0, #f6f6f6 150px);
+  .online-support-paragraph1 {
+	width: 80% !important;
+  }
+
+  .online-support1 {
+	float: left;
+	width: 50%;
+  }
+  .online-support-h1 {
+	margin-bottom: 30px;
+  }
+}
+
+.unnecessary-eikaiwa {
+  padding-bottom: 60px;
+  margin-top: 50px;
+}
+
 }
 
 
-.make-carriculum {
-  padding-bottom: 50px;
-}
 
-.life-advice-row {
-  height: 700px !important;
-  width: 80% !important;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.life-advice-paragraph1 {
-  width: 80% !important;
-}
 
-.life-advice-paragraph2 {
-  width: 80% !important;
-}
-.life-advice-paragraph3 {
-  width: 80% !important;
-}
-.main-container {
-}
 
-.life-advice1 {
-  width: 33%;
-  float: left;
-}
+
+
 h4 {
   font-size: 2em;
   color: #333;
@@ -233,22 +235,6 @@ h4 {
   text-align: center;
   padding-top: 10px;
 }
-.online-support-paragraph1 {
-  width: 80% !important;
-}
 
-.online-support1 {
-  float: left;
-  width: 50%;
-}
-.online-support-h1 {
-  margin-bottom: 30px;
-}
-
-.row--extend {
-  width: 100% !important;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
 
 </style>

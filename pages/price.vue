@@ -123,8 +123,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
 html {
   background: white;
 }

@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div>
+	<div>
 	  <p class="profile">
 		1993年生まれ。慶應義塾大学経済学部卒。<br>
 		独学で慶應義塾大学、東京外国語大学に合格。<br>
@@ -11,27 +11,16 @@
 	  </p>
 
 	  <!--<img :src="require('../assets/TOEIC-SCORE.png')" />-->
-    </div>
+	</div>
   </section>
 </template>
 
 <script>
 
-export default {
-  components: {
-  },
-  data () {
-        return {
-        }
-  }
-}
 </script>
 
-<style>
-.profile {
-  width: 100% !important;
-  margin-bottom: 400px;
-}
+
+<style lang="scss">
 
 .container {
   min-height: 87vh;
@@ -39,26 +28,10 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  .profile {
+	width: 100% !important;
+	margin-bottom: 400px;
+  }
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
