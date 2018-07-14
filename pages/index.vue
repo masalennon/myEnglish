@@ -81,7 +81,6 @@
 </template>
 
 <style lang="scss">
-/*
   @media only screen and (max-width: 979px) {
 
 	html{
@@ -108,7 +107,6 @@
 	}
 
   } 
-  */
 html {
   background: whitesmoke !important;
   .copyright{

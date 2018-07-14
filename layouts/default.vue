@@ -35,7 +35,6 @@
 <script>
 </script>
 <style lang="scss">
-/*
 @media only screen and (max-width: 979px) {
 
 	html{
@@ -60,7 +59,6 @@
 	}
 
   }  
-*/
   html {
 	word-spacing: 1px;
 	-ms-text-size-adjust: 100%;
