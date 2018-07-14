@@ -81,6 +81,7 @@
 </template>
 
 <style lang="scss">
+/*
   @media only screen and (max-width: 979px) {
 
 	html{
@@ -88,7 +89,7 @@
 	  font-size: 100%;
 	}
 
-  } /*デバイスの横幅が979px以下の場合*/
+  } 
 
   @media only screen and (min-width: 321px) and (max-width: 768px) {
 
@@ -98,7 +99,7 @@
 
 	}
 
-  } /*デバイスの横幅が321以上768以下の場合*/
+  } 
 
   @media only screen and (max-width: 320px) {
 
@@ -106,7 +107,8 @@
 	  font-size: 62.5%;
 	}
 
-  } /* デバイスの横幅が320px以下の場合 */
+  } 
+  */
 html {
   background: whitesmoke !important;
   .copyright{
