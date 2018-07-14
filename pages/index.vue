@@ -24,22 +24,16 @@
 			</ul>
 		  </div>
 		</section>
-		<div class="row">
-		  <section>
-			3コースがお選びいただけます
-			基礎コース
-			TOEIC対策コース
-			英会話コース
-		  </section>
-		</div>
 	  </div>
-
-	  <div class="row">
-		<section class="second-section">
+	  当サービスなら↓
+	  <section class="second-section">
+		<div class="row">
 		  <div class="second-list">
 			<ul>
 			  <li class="item">
-				科学に裏打ちされた学習カリキュラムだから<em>効率的</em>
+				<div class="sentence">
+				  科学に裏打ちされた学習カリキュラムだから<em>効率的</em>
+				</div>
 			  </li>
 			  <li class="item">
 				<div class="sentence">
@@ -48,7 +42,7 @@
 			  </li>
 			  <li class="item">
 				<div class="sentence">
-				  個人によるマンツーマンレッスンだから<em>お手頃</em>
+				  個人によるマンツーマンレッスンだから<em>お手頃価格</em>
 				</div>
 			  </li>
 			  <li class="item">
@@ -58,7 +52,7 @@
 			  </li>
 			  <li class="item">
 				<div class="sentence">
-				  あなたの限界を目標に設定するから<em>短期集中的</em>
+				  短期間で圧倒的な勉強量を確保してやりきる<em>短期集中型</em>
 				</div>
 			  </li>
 			  <li class="item">
@@ -68,102 +62,140 @@
 			  </li>
 			</ul>
 		  </div>
-		</section>
-	  </div>
+		</div>
+	  </section>
 
+	  <section class="course-section">
+		<div class="row">
+		  <div class="course">
+			3コースがお選びいただけます
+			基礎コース
+			TOEIC対策コース
+			英会話コース
+		  </div>
+		</div>
+	  </section>
 	</div>
 
   </main>
 </template>
 
 <style lang="scss">
-  html {
-	background: whitesmoke !important;
-	.copyright{
-	  background: whitesmoke;
-	  margin-top: 0px;
+  @media only screen and (max-width: 979px) {
+
+	html{
+	  Width:100%;
+	  font-size: 100%;
 	}
-	.container {
-	  background: whitesmoke;
-	  min-height: 100vh;
-	  justify-content: center;
-	  align-items: center;
-	  text-align: center;
-	  max-width: 100%;
-	  p {
-		margin-bottom: 0px !important;
+
+  } /*デバイスの横幅が979px以下の場合*/
+
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+
+	html{
+	  Width:100%;
+	  font-size: 62.5%;
+
+	}
+
+  } /*デバイスの横幅が321以上768以下の場合*/
+
+  @media only screen and (max-width: 320px) {
+
+	html{
+	  font-size: 62.5%;
+	}
+
+  } /* デバイスの横幅が320px以下の場合 */
+html {
+  background: whitesmoke !important;
+  .copyright{
+	background: whitesmoke;
+	margin-top: 0px;
+  }
+  .container {
+	background: whitesmoke;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 100%;
+	p {
+	  margin-bottom: 0px !important;
+	}
+	h3 {
+	  margin-bottom: 0px;
+	}
+	.course-section {
+	  margin-right: auto;
+	  margin-left: auto;
+	  width: 80%;
+	  background: white;
+	  margin-top: 50px;
+	  .course {
+	  margin-right: auto;
+	  margin-left: auto;
 	  }
-	  h3 {
-		margin-bottom: 0px;
-	  }
-	  .first-section {
-		background: white;
-		width: 80%;
+	}
+	.first-section {
+	  background: white;
+	  width: 80%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  .first-list {
+		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
-		.first-list {
-		  width: 70%;
-		  margin-left: auto;
-		  margin-right: auto;
-		  li {
-			text-align: left;
-			list-style: none;
-		  }
+		li {
+		  text-align: left;
+		  list-style: none;
 		}
 	  }
-	  .second-section {
+	}
+	.second-section {
+	  margin-left: auto;
+	  margin-right: auto;
+	  background: white;
+	  width: 80%;
+	  .second-list{
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
-		background: white;
-		width: 80%;
-		.second-list{
-		  width: 80%;
-		  margin-left: auto;
-		  margin-right: auto;
-		  ul {
-			padding-top: 30px;
-			li {
-			  text-align: left;
-			  height: 80px;
-			  padding: 0.1em 1rem 0em 10%;
-			  font-size: 1.8rem;
-			  list-style: none;
-			  background-image: url(../assets/checkmark.svg);
-			  background-repeat: no-repeat;
+		ul {
+		  padding-top: 30px;
+		  li {
+			text-align: left;
+			height: 80px;
+			width: 90%;
+			padding: 0.1em 1rem 0em 10%;
+			font-size: 1.8rem;
+			list-style: none;
+			background-image: url(../assets/checkmark.svg);
+			background-repeat: no-repeat;
+			margin-top: 20px;
+			margin-right: auto;
+			margin-left: auto;
+			.sentence {
 			  border-bottom: whitesmoke solid thick;
-			  margin-top: 20px;
-			  .item {
-				vertical-align: bottom;
-			  }
-			  em {
-				color: #ea8b00;
-				font-weight: 700;
-			  }
+			  padding-bottom: 10px;
+			  width: 100%;
+			}
+			.item {
+			}
+			em {
+			  color: #ea8b00;
+			  font-weight: 700;
 			}
 		  }
 		}
 	  }
-	  .links {
-		padding-top: 15px;
-	  }
-
 	}
+	.links {
+	  padding-top: 15px;
+	}
+
   }
+}
 
-	  	.second-section::after {
-		  content: '';
-		  display: block;
-		  width: 0px;
-		  height: 0px;
-		  border-top: solid 4rem RGBA(245, 245, 245, 1.00);
-		  border-left: solid 5rem #FFF;
-		  border-right: solid 5rem #FFF;
-		  position: absolute;
-		  bottom: 4.3rem;
-		  left: 50%;
-		  margin-left: -5rem;
-		  z-index: 10;
-
-		}
 
 </style>
