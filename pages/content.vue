@@ -26,6 +26,7 @@
 
   <main class="main-container">
 	<article>
+
 	  <div class="row row--extend">
 		<div class="col-md-12">
 		  <div class="make-carriculum-header">
@@ -76,7 +77,7 @@
 			</h4>
 			<p class="life-advice-paragraph">
 			  継続して毎日の学習を行えるように、宿題の設定をいたします。宿題を全てこなしていけばあなたの目標を達成できるように作成しますので、
-			  毎日の学習のペースメーカーとしてお役立てください。もちろん、自分で学ぶペースを決めたい、など希望がありましたら柔軟にお答えいたします。
+			  毎日の学習のペースメーカーとしてお役立てください。もちろん、自分で学ぶペースを決めたい、など希望がありましたら柔軟にご対応いたします。
 			</p>
 		  </div>
 		</div>
@@ -119,10 +120,10 @@
 			もう英会話教室は<br>
 			必要ありません！
 		  </h1>
+		  <img style="height: 230px;" :src="require('../assets/earth-with-children-ring-around.svg')" />
 		  <h4>
 			英語を学べば、<br>世界が一気に広がる！
 		  </h4>
-		  <img style="height: 230px;" :src="require('../assets/earth-with-children-ring-around.svg')" />
 		  <p class="unnecessary-eikaiwa-paragraph">
 			良質な教材はネット、書店に溢れています。<br>
 			必要なのはそれらの正しい活用方法と独学力です。<br>
