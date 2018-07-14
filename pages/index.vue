@@ -170,7 +170,7 @@ html {
 			padding: 0.1em 1rem 0em 10%;
 			font-size: 1.8rem;
 			list-style: none;
-			background-image: url(../assets/checkmark.svg);
+/*			background-image: url(../assets/checkmark.svg); */
 			background-repeat: no-repeat;
 			margin-top: 20px;
 			margin-right: auto;
